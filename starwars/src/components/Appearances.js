@@ -1,12 +1,12 @@
 import React from "react";
 
 
-const Appearances = () =>  {
+const Appearances = (props) =>  {
     
 
     return (
         <div>
-
+            
         </div>
     )
 }

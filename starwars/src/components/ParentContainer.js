@@ -10,7 +10,7 @@ const ParentContainer = () =>  {
     useEffect(() => {
         axios.get("https://swapi.co/api/people/")
         .then((response) => {
-            console.log(response);
+            // console.log(response);
             setSwData(response.data.results)
         })
         .catch((err) => { 
@@ -20,7 +20,7 @@ const ParentContainer = () =>  {
     
       return (
           <div>
-              {console.log(swData)}
+              {/* {console.log(swData)} */}
               {swData.forEach((item) => {
                   return(
                   <CharacterCard charInfo={item} />
