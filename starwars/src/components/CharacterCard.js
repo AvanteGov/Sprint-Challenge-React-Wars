@@ -16,8 +16,6 @@ const CharacterCard = (props) => {
     background: white;
     `
 
-
-
     return (
 
         <Card>
