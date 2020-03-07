@@ -3,6 +3,8 @@ import axios from "axios"
 import CharacterCard from "./CharacterCard";
 
 
+
+
 const ParentContainer = () =>  {
 
     const [swData , setSwData] = useState([])
@@ -10,7 +12,7 @@ const ParentContainer = () =>  {
     useEffect(() => {
         axios.get("https://swapi.co/api/people/")
         .then((response) => {
-            // console.log(response);
+            // console.log(response.data.results);
             setSwData(response.data.results)
         })
         .catch((err) => { 
@@ -20,8 +22,8 @@ const ParentContainer = () =>  {
     
       return (
           <div>
-              {/* {console.log(swData)} */}
-              {swData.forEach((item) => {
+              {console.log(swData)}
+              {swData.map((item) => {
                   return(
                   <CharacterCard charInfo={item} />
                   )
