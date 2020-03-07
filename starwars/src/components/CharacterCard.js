@@ -1,7 +1,7 @@
 import React from "react";
-// import Appearances from ""
+import Appearances from "./Appearances"
 
-const CharacterCard = () => { 
+const CharacterCard = (props) => { 
 
 
 
@@ -17,7 +17,7 @@ const CharacterCard = () => {
             <p>{`Skin Colour:`}</p>
             <p>{`Hair Color:`}</p>
             <p>{`Gender:`}</p>
-            {/* <Appearances /> */}
+            <Appearances />
         </div>
     )
 
